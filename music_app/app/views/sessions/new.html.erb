@@ -1,0 +1,21 @@
+
+<div id="container">
+<form action="<%= session_url %>" method="POST">
+    <input 
+    type="hidden" 
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>"> 
+
+    <label>Email
+        <input type="text" name="user[email]" value="">
+    </label>
+    
+    <label >Password
+        <input type="password" name="user[password]">
+    </label>
+    <div id='lower'>
+    <input type="submit" value="Login">
+    </div>
+
+</form>
+</div>
